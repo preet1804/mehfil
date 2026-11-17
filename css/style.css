@@ -1,0 +1,1197 @@
+/* ==========================================================================
+   MEHFIL — LUXURY BESPOKE INDIAN WEDDINGS & DIGITAL RSVP CONCIERGE
+   Main Stylesheet: Authentic Heritage Aesthetic, Editorial Elegance & Performance
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Authentic Indian Wedding Color Palette */
+  --color-burgundy: #5E1928;
+  --color-burgundy-deep: #430E1B;
+  --color-burgundy-light: #7A2338;
+  --color-royal-red: #8B1E22;
+  --color-royal-red-glow: #B71C1C;
+  
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-gold-deep: #AA7C11;
+  --color-gold-shimmer: linear-gradient(135deg, #F9E79F 0%, #D4AF37 50%, #996515 100%);
+  --color-gold-subtle: rgba(212, 175, 55, 0.15);
+  --color-gold-border: rgba(212, 175, 55, 0.35);
+
+  --color-haldi-yellow: #F5A623;
+  --color-haldi-glow: #F9B208;
+  --color-marigold-orange: #E65100;
+  --color-marigold-warm: #EA580C;
+  --color-mehendi-green: #2E5A36;
+  --color-mehendi-deep: #1F3E26;
+  --color-mehendi-sage: #4B7C59;
+
+  --color-ivory: #FCFBF7;
+  --color-cream: #FAF6EE;
+  --color-sand: #F4ECE1;
+  --color-charcoal: #1C1718;
+  --color-text-muted: #6B6264;
+  --color-text-dark: #2B2123;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-royal: 'Cinzel', 'Playfair Display', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing & Layout */
+  --container-max: 1280px;
+  --container-wide: 1400px;
+  --transition-smooth: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-royal: 0 10px 30px rgba(94, 25, 40, 0.12), 0 2px 10px rgba(212, 175, 55, 0.1);
+  --shadow-card: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Base Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-ivory);
+  color: var(--color-text-dark);
+  line-height: 1.65;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Background Jaali Subtle Texture Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/vectors/jaali-pattern.svg');
+  background-repeat: repeat;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.container-wide {
+  width: 94%;
+  max-width: var(--container-wide);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   ORNAMENTAL INDIAN DECORATIVE ELEMENTS & HEADINGS
+   ========================================================================== */
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-burgundy);
+  margin-bottom: 0.75rem;
+  background: rgba(212, 175, 55, 0.12);
+  padding: 6px 16px;
+  border-radius: 30px;
+  border: 1px solid var(--color-gold-border);
+}
+
+.section-tag::before,
+.section-tag::after {
+  content: '✦';
+  color: var(--color-gold);
+  font-size: 0.75rem;
+}
+
+.section-title {
+  font-family: var(--font-royal);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-burgundy-deep);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.section-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.title-center {
+  text-align: center;
+}
+
+/* Gold Divider with Kalash/Lotus motif */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 1.5rem auto 2.5rem;
+  max-width: 320px;
+}
+
+.gold-divider::before,
+.gold-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+}
+
+.gold-divider .divider-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--color-burgundy);
+  color: var(--color-gold-light);
+  border: 1px solid var(--color-gold);
+  box-shadow: 0 4px 15px rgba(94, 25, 40, 0.25);
+}
+
+.btn-primary:hover {
+  background: var(--color-burgundy-deep);
+  color: #FFFFFF;
+  box-shadow: 0 8px 25px rgba(94, 25, 40, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background: var(--color-gold-shimmer);
+  color: var(--color-burgundy-deep);
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-gold:hover {
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-burgundy);
+  border: 1.5px solid var(--color-gold);
+}
+
+.btn-outline:hover {
+  background: var(--color-gold-subtle);
+  border-color: var(--color-burgundy);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   TOP CONCIERGE BAR & STICKY HEADER
+   ========================================================================== */
+
+.top-bar {
+  background: var(--color-burgundy-deep);
+  color: var(--color-gold-light);
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  position: relative;
+  z-index: 100;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar-notice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-bar-contact {
+  display: flex;
+  gap: 20px;
+}
+
+.top-bar-contact a:hover {
+  color: #FFFFFF;
+}
+
+/* Main Navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(252, 251, 247, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-gold-border);
+  z-index: 99;
+  transition: var(--transition-smooth);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  height: 52px;
+}
+
+.brand-logo img {
+  height: 100%;
+  width: auto;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-charcoal);
+  position: relative;
+  padding: 6px 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--color-gold);
+  transition: var(--transition-smooth);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: var(--color-burgundy);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--color-burgundy);
+}
+
+/* ==========================================================================
+   HERO SECTION — CINEMATIC INDIAN WEDDING ROYALTY
+   ========================================================================== */
+
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at center, #FAF6EE 0%, #F5EFEB 100%);
+  overflow: hidden;
+  padding: 60px 0 80px;
+}
+
+.hero-mandala-bg {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 800px;
+  height: 800px;
+  opacity: 0.12;
+  pointer-events: none;
+  animation: slowSpin 140s linear infinite;
+}
+
+@keyframes slowSpin {
+  from { transform: translateY(-50%) rotate(0deg); }
+  to { transform: translateY(-50%) rotate(360deg); }
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-tag {
+  margin-bottom: 1.2rem;
+}
+
+.hero-title {
+  font-family: var(--font-royal);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-burgundy-deep);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title span {
+  background: var(--color-gold-shimmer);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+
+.hero-description {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--color-text-dark);
+  line-height: 1.6;
+  margin-bottom: 2.2rem;
+  max-width: 580px;
+}
+
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 3rem;
+}
+
+/* Hero Trust Stats */
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-gold-border);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-family: var(--font-royal);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-burgundy);
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-muted);
+}
+
+/* Hero Visual Composition */
+.hero-visual {
+  position: relative;
+}
+
+.hero-arch-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  border-radius: 240px 240px 16px 16px;
+  padding: 10px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.6) 0%, rgba(94, 25, 40, 0.4) 100%);
+  box-shadow: 0 25px 50px rgba(94, 25, 40, 0.18);
+}
+
+.hero-arch-inner {
+  border-radius: 230px 230px 10px 10px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 4 / 5.6;
+  background: var(--color-sand);
+}
+
+.hero-arch-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.hero-arch-wrapper:hover .hero-arch-inner img {
+  transform: scale(1.04);
+}
+
+/* Floating Badge */
+.hero-floating-card {
+  position: absolute;
+  bottom: 30px;
+  left: -35px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 16px 22px;
+  border-radius: 8px;
+  border: 1px solid var(--color-gold-border);
+  box-shadow: var(--shadow-royal);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 3;
+}
+
+.card-icon-circle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--color-gold-subtle);
+  border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-burgundy);
+  font-size: 1.3rem;
+}
+
+.card-text h5 {
+  font-family: var(--font-royal);
+  font-size: 0.95rem;
+  color: var(--color-burgundy-deep);
+}
+
+.card-text p {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   CEREMONIES & TRADITIONS SHOWCASE (THE MEHFIL JOURNEY)
+   ========================================================================== */
+
+.ceremonies-section {
+  padding: 100px 0;
+  background: var(--color-cream);
+  position: relative;
+}
+
+.ceremonies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 3.5rem;
+}
+
+.ceremony-card {
+  background: var(--color-white);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-gold-border);
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.ceremony-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-royal);
+  border-color: var(--color-gold);
+}
+
+.ceremony-img-wrapper {
+  position: relative;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+}
+
+.ceremony-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.ceremony-card:hover .ceremony-img-wrapper img {
+  transform: scale(1.06);
+}
+
+.ceremony-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.badge-haldi { background: var(--color-haldi-yellow); color: #4A2E00; }
+.badge-mehendi { background: var(--color-mehendi-green); }
+.badge-sangeet { background: var(--color-burgundy); }
+.badge-wedding { background: var(--color-royal-red); }
+.badge-reception { background: #1A2E40; }
+.badge-hampers { background: var(--color-marigold-warm); }
+
+.ceremony-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ceremony-title {
+  font-family: var(--font-royal);
+  font-size: 1.3rem;
+  color: var(--color-burgundy-deep);
+  margin-bottom: 8px;
+}
+
+.ceremony-desc {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  flex: 1;
+}
+
+.ceremony-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 14px;
+  font-size: 0.8rem;
+  color: var(--color-gold-deep);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   DIGITAL RSVP & INVITATION SUITE SPOTLIGHT (MAIN PRODUCT)
+   ========================================================================== */
+
+.rsvp-spotlight-section {
+  padding: 110px 0;
+  background: radial-gradient(circle at center, #4E1422 0%, #2A0912 100%);
+  color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.rsvp-spotlight-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-image: url('../assets/vectors/marigold-toran.svg');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.rsvp-spotlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.rsvp-spotlight-content .section-tag {
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--color-gold-light);
+  border-color: var(--color-gold);
+}
+
+.rsvp-spotlight-content .section-title {
+  color: #FFFFFF;
+}
+
+.rsvp-spotlight-content .section-subtitle {
+  color: var(--color-gold-light);
+  margin: 0 0 2rem 0;
+  font-size: 1.25rem;
+}
+
+.features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 2.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.feature-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold-light);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.feature-text h4 {
+  font-family: var(--font-royal);
+  font-size: 1.05rem;
+  color: var(--color-gold-light);
+  margin-bottom: 4px;
+}
+
+.feature-text p {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+/* Card Mockup Showcase */
+.rsvp-card-mockup {
+  position: relative;
+  background: #FAF6EE;
+  color: var(--color-text-dark);
+  border-radius: 16px;
+  padding: 40px;
+  border: 2px solid var(--color-gold);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), inset 0 0 30px rgba(212, 175, 55, 0.15);
+  text-align: center;
+}
+
+.rsvp-mockup-corner-tl,
+.rsvp-mockup-corner-tr,
+.rsvp-mockup-corner-bl,
+.rsvp-mockup-corner-br {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--color-gold);
+}
+
+.rsvp-mockup-corner-tl { top: 12px; left: 12px; border-right: none; border-bottom: none; }
+.rsvp-mockup-corner-tr { top: 12px; right: 12px; border-left: none; border-bottom: none; }
+.rsvp-mockup-corner-bl { bottom: 12px; left: 12px; border-right: none; border-top: none; }
+.rsvp-mockup-corner-br { bottom: 12px; right: 12px; border-left: none; border-top: none; }
+
+.mockup-header-icon {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 12px;
+}
+
+.mockup-invitation-pre {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--color-gold-deep);
+  letter-spacing: 1px;
+}
+
+.mockup-couple-names {
+  font-family: var(--font-royal);
+  font-size: 2.2rem;
+  color: var(--color-burgundy);
+  margin: 6px 0 14px;
+}
+
+.mockup-details {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: 22px;
+}
+
+.mockup-functions-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.mockup-fn-badge {
+  background: var(--color-ivory);
+  border: 1px solid var(--color-gold-border);
+  padding: 8px 6px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-burgundy);
+}
+
+/* ==========================================================================
+   EDITORIAL WEDDINGS GALLERY (ASYMMETRICAL LUXURY GRID)
+   ========================================================================== */
+
+.gallery-section {
+  padding: 100px 0;
+  background: var(--color-ivory);
+}
+
+.gallery-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 2.5rem 0 3.5rem;
+}
+
+.tab-btn {
+  background: none;
+  border: 1px solid var(--color-gold-border);
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: var(--color-burgundy);
+  color: var(--color-gold-light);
+  border-color: var(--color-gold);
+}
+
+/* Editorial Asymmetrical Grid */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-royal);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+/* Asymmetrical Spans */
+.col-span-8 { grid-column: span 8; height: 460px; }
+.col-span-4 { grid-column: span 4; height: 460px; }
+.col-span-4-short { grid-column: span 4; height: 360px; }
+.col-span-4-tall { grid-column: span 4; height: 520px; }
+.col-span-6 { grid-column: span 6; height: 400px; }
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(30, 8, 14, 0.85) 0%, rgba(30, 8, 14, 0.1) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-overlay-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  margin-bottom: 6px;
+}
+
+.gallery-overlay-title {
+  font-family: var(--font-royal);
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.gallery-overlay-desc {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ==========================================================================
+   TESTIMONIALS & ROYAL STORIES
+   ========================================================================== */
+
+.testimonials-section {
+  padding: 100px 0;
+  background: var(--color-sand);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 3.5rem;
+}
+
+.testimonial-card {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 40px;
+  border: 1px solid var(--color-gold-border);
+  box-shadow: var(--shadow-subtle);
+  position: relative;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.testimonial-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-gold);
+  flex-shrink: 0;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+
+.quote-mark {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--color-gold);
+  opacity: 0.6;
+}
+
+.testimonial-text {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--color-text-dark);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.testimonial-author {
+  font-family: var(--font-royal);
+  font-size: 1rem;
+  color: var(--color-burgundy);
+}
+
+.testimonial-location {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   INTERACTIVE WEDDING INQUIRY & CONCIERGE CALCULATOR
+   ========================================================================== */
+
+.inquiry-section {
+  padding: 100px 0;
+  background: radial-gradient(circle at center, #5A1624 0%, #350A14 100%);
+  color: #FFFFFF;
+}
+
+.inquiry-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-gold-border);
+  border-radius: 16px;
+  padding: 50px;
+  max-width: 860px;
+  margin: 3rem auto 0;
+}
+
+.inquiry-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.form-group-full {
+  grid-column: span 2;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  margin-bottom: 8px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.form-control:focus {
+  border-color: var(--color-gold);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+select.form-control option {
+  background: #350A14;
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   FOOTER — HERITAGE EMBLEM & TRANSPARENCY
+   ========================================================================== */
+
+.site-footer {
+  background: var(--color-burgundy-deep);
+  color: var(--color-cream);
+  padding: 80px 0 30px;
+  position: relative;
+  border-top: 2px solid var(--color-gold);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  color: rgba(250, 246, 238, 0.75);
+  line-height: 1.7;
+  margin: 18px 0 24px;
+  max-width: 320px;
+}
+
+.footer-col h4 {
+  font-family: var(--font-royal);
+  font-size: 1.1rem;
+  color: var(--color-gold);
+  margin-bottom: 22px;
+  letter-spacing: 1px;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  font-size: 0.88rem;
+  color: rgba(250, 246, 238, 0.8);
+  transition: var(--transition-smooth);
+}
+
+.footer-links a:hover {
+  color: var(--color-gold-light);
+  transform: translateX(4px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: rgba(250, 246, 238, 0.6);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MOBILE & TABLET)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .hero-title { font-size: 2.8rem; }
+  .ceremonies-grid { grid-template-columns: repeat(2, 1fr); }
+  .editorial-grid .col-span-8 { grid-column: span 12; height: 380px; }
+  .editorial-grid .col-span-4 { grid-column: span 6; height: 380px; }
+  .editorial-grid .col-span-4-short { grid-column: span 6; height: 320px; }
+  .editorial-grid .col-span-4-tall { grid-column: span 6; height: 420px; }
+  .editorial-grid .col-span-6 { grid-column: span 12; height: 360px; }
+  .rsvp-spotlight-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .top-bar-contact { display: none; }
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: var(--color-ivory);
+    flex-direction: column;
+    padding: 40px;
+    transition: var(--transition-smooth);
+    border-top: 1px solid var(--color-gold-border);
+  }
+  .nav-menu.open { left: 0; }
+  .mobile-toggle { display: block; }
+  .hero-grid { grid-template-columns: 1fr; text-align: center; }
+  .hero-description { margin-left: auto; margin-right: auto; }
+  .hero-ctas { justify-content: center; }
+  .hero-stats { justify-content: center; }
+  .hero-floating-card { left: 10px; bottom: 10px; }
+  .ceremonies-grid { grid-template-columns: 1fr; }
+  .editorial-grid .col-span-4,
+  .editorial-grid .col-span-4-short,
+  .editorial-grid .col-span-4-tall { grid-column: span 12; height: 320px; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .testimonial-card { flex-direction: column; text-align: center; }
+  .inquiry-form { grid-template-columns: 1fr; }
+  .form-group-full { grid-column: span 1; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 14px; text-align: center; }
+}

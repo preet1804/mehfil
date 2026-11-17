@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 90" width="100%" height="100%" fill="none">
+  <defs>
+    <radialGradient id="gendaYellow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE066" />
+      <stop offset="60%" stop-color="#F5A623" />
+      <stop offset="100%" stop-color="#D97706" />
+    </radialGradient>
+    <radialGradient id="gendaOrange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFA450" />
+      <stop offset="70%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#B43403" />
+    </radialGradient>
+    <linearGradient id="leafGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4B7C59" />
+      <stop offset="100%" stop-color="#2D5A38" />
+    </linearGradient>
+  </defs>
+
+  <!-- Hanging Twine Rope -->
+  <path d="M 0 18 Q 125 45 250 18 Q 375 45 500 18 Q 625 45 750 18 Q 875 45 1000 18" stroke="#8C6D37" stroke-width="2.5" />
+  
+  <!-- Mango Leaves (Aam Patta) -->
+  <g fill="url(#leafGreen)">
+    <path d="M 125 35 C 115 50 120 70 125 80 C 130 70 135 50 125 35 Z" />
+    <path d="M 375 35 C 365 50 370 70 375 80 C 380 70 385 50 375 35 Z" />
+    <path d="M 625 35 C 615 50 620 70 625 80 C 630 70 635 50 625 35 Z" />
+    <path d="M 875 35 C 865 50 870 70 875 80 C 880 70 885 50 875 35 Z" />
+  </g>
+
+  <!-- Marigold Blossoms -->
+  <g>
+    <!-- Cluster 1 -->
+    <circle cx="30" cy="22" r="11" fill="url(#gendaYellow)" />
+    <circle cx="60" cy="27" r="11" fill="url(#gendaOrange)" />
+    <circle cx="90" cy="31" r="11" fill="url(#gendaYellow)" />
+    <circle cx="125" cy="33" r="13" fill="url(#gendaOrange)" />
+    <circle cx="160" cy="31" r="11" fill="url(#gendaYellow)" />
+    <circle cx="190" cy="27" r="11" fill="url(#gendaOrange)" />
+    <circle cx="220" cy="22" r="11" fill="url(#gendaYellow)" />
+    <circle cx="250" cy="18" r="12" fill="url(#gendaOrange)" />
+    
+    <!-- Cluster 2 -->
+    <circle cx="280" cy="22" r="11" fill="url(#gendaYellow)" />
+    <circle cx="310" cy="27" r="11" fill="url(#gendaOrange)" />
+    <circle cx="340" cy="31" r="11" fill="url(#gendaYellow)" />
+    <circle cx="375" cy="33" r="13" fill="url(#gendaOrange)" />
+    <circle cx="410" cy="31" r="11" fill="url(#gendaYellow)" />
+    <circle cx="440" cy="27" r="11" fill="url(#gendaOrange)" />
+    <circle cx="470" cy="22" r="11" fill="url(#gendaYellow)" />
+    <circle cx="500" cy="18" r="12" fill="url(#gendaOrange)" />
+
+    <!-- Cluster 3 -->
+    <circle cx="530" cy="22" r="11" fill="url(#gendaYellow)" />
+    <circle cx="560" cy="27" r="11" fill="url(#gendaOrange)" />
+    <circle cx="590" cy="31" r="11" fill="url(#gendaYellow)" />
+    <circle cx="625" cy="33" r="13" fill="url(#gendaOrange)" />
+    <circle cx="660" cy="31" r="11" fill="url(#gendaYellow)" />
+    <circle cx="690" cy="27" r="11" fill="url(#gendaOrange)" />
+    <circle cx="720" cy="22" r="11" fill="url(#gendaYellow)" />
+    <circle cx="750" cy="18" r="12" fill="url(#gendaOrange)" />
+
+    <!-- Cluster 4 -->
+    <circle cx="780" cy="22" r="11" fill="url(#gendaYellow)" />
+    <circle cx="810" cy="27" r="11" fill="url(#gendaOrange)" />
+    <circle cx="840" cy="31" r="11" fill="url(#gendaYellow)" />
+    <circle cx="875" cy="33" r="13" fill="url(#gendaOrange)" />
+    <circle cx="910" cy="31" r="11" fill="url(#gendaYellow)" />
+    <circle cx="940" cy="27" r="11" fill="url(#gendaOrange)" />
+    <circle cx="970" cy="22" r="11" fill="url(#gendaYellow)" />
+  </g>
+</svg>

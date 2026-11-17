@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="archGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5D061" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#9E782F" />
+    </linearGradient>
+  </defs>
+  <!-- Outer Arch Border -->
+  <path d="M 20 540 L 20 220 C 20 180 50 160 80 140 C 110 120 140 100 170 70 C 185 55 195 40 200 20 C 205 40 215 55 230 70 C 260 100 290 120 320 140 C 350 160 380 180 380 220 L 380 540 Z" 
+        stroke="url(#archGold)" stroke-width="2.5" />
+  <!-- Inner Decorative Arch -->
+  <path d="M 32 535 L 32 225 C 32 188 60 170 88 152 C 116 134 144 114 172 86 C 186 72 195 56 200 40 C 205 56 214 72 228 86 C 256 114 284 134 312 152 C 340 170 368 188 368 225 L 368 535 Z" 
+        stroke="url(#archGold)" stroke-width="1" stroke-dasharray="3 3" opacity="0.8" />
+  
+  <!-- Arch Cusps / Scallops -->
+  <g stroke="url(#archGold)" stroke-width="1.2" opacity="0.9">
+    <circle cx="200" cy="18" r="4" fill="url(#archGold)" />
+    <circle cx="160" cy="80" r="3" fill="url(#archGold)" />
+    <circle cx="240" cy="80" r="3" fill="url(#archGold)" />
+    <circle cx="100" cy="130" r="3" fill="url(#archGold)" />
+    <circle cx="300" cy="130" r="3" fill="url(#archGold)" />
+    <circle cx="50" cy="185" r="3" fill="url(#archGold)" />
+    <circle cx="350" cy="185" r="3" fill="url(#archGold)" />
+  </g>
+</svg>

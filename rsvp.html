@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Wedding Card &amp; RSVP — Devika &amp; Aarav | Mehfil</title>
+  <meta name="description" content="Official digital wedding invitation and multi-ceremony RSVP concierge for Devika Sharma & Aarav Rathore at The Oberoi Udaivilas, Udaipur.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rsvp.css">
+  <link rel="icon" type="image/svg+xml" href="assets/vectors/logo.svg">
+</head>
+<body class="theme-rajasthani">
+
+  <!-- Top Navigation Bar -->
+  <aside class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-notice">
+        <span>✦</span> Mehfil Digital Indian Wedding Invitation Suite • Client Live Demo
+      </div>
+      <div class="top-bar-contact">
+        <a href="index.html">← Return to Mehfil Home</a>
+        <a href="gallery.html">View Gallery</a>
+        <a href="licenses.html">Licensing Reference</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Mehfil Home">
+        <img src="assets/vectors/logo.svg" alt="Mehfil Logo" width="220" height="52">
+      </a>
+
+      <div style="display: flex; align-items: center; gap: 15px;">
+        <span style="font-size: 0.8rem; font-weight: 700; color: var(--color-burgundy); letter-spacing: 1px; text-transform: uppercase;">
+          Digital Wedding Card
+        </span>
+        <a href="index.html" class="btn btn-outline" style="padding: 8px 18px; font-size: 0.75rem;">Main Website</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Wrapper -->
+  <main class="rsvp-page-wrapper">
+    <div class="container">
+
+      <!-- Interactive Theme Switcher Bar -->
+      <section class="theme-switcher-bar" aria-label="Visual Theme Switcher">
+        <span class="theme-switcher-label">
+          <span>🎨</span> Select Invitation Theme:
+        </span>
+
+        <button type="button" class="theme-btn active" data-theme="theme-rajasthani">
+          <span class="color-dot" style="background: #7A1C2E;"></span> Royal Rajasthani
+        </button>
+
+        <button type="button" class="theme-btn" data-theme="theme-marigold">
+          <span class="color-dot" style="background: #E65100;"></span> Traditional Marigold
+        </button>
+
+        <button type="button" class="theme-btn" data-theme="theme-minimal">
+          <span class="color-dot" style="background: #A38035;"></span> Modern Minimal Indian
+        </button>
+
+        <button type="button" class="theme-btn" data-theme="theme-ivory-gold">
+          <span class="color-dot" style="background: #C5A059;"></span> Ivory &amp; Antique Gold
+        </button>
+
+        <button type="button" class="theme-btn" data-theme="theme-mehendi">
+          <span class="color-dot" style="background: #2E5A36;"></span> Mehendi Green
+        </button>
+
+        <button type="button" class="theme-btn" data-theme="theme-burgundy">
+          <span class="color-dot" style="background: #5E1928;"></span> Burgundy &amp; Champagne
+        </button>
+      </section>
+
+      <!-- The Digital Indian Wedding Card -->
+      <article class="wedding-card">
+        <!-- Ornamental Corners -->
+        <div class="card-corner card-corner-tl"></div>
+        <div class="card-corner card-corner-tr"></div>
+        <div class="card-corner card-corner-bl"></div>
+        <div class="card-corner card-corner-br"></div>
+
+        <div class="card-inner-frame">
+          <!-- Card Header / Sacred Invocation -->
+          <header class="invitation-header">
+            <img src="assets/vectors/ganesh-mangalam.svg" alt="Ganesh Mangalam Invocation" class="ganesh-symbol" width="70" height="70">
+            <p class="auspicious-mantra">|| ॐ श्री गणेशाय नमः ||</p>
+            <p style="font-family: var(--font-royal); font-size: 0.85rem; letter-spacing: 2px; text-transform: uppercase; color: var(--card-accent); margin-bottom: 12px;">
+              Shubh Vivah Invocation
+            </p>
+            <p class="invitation-family-greeting">
+              With the divine blessings of Lord Ganesha and our elders, the Sharma &amp; Rathore families cordially invite you to celebrate the sacred union and wedding celebrations of their beloved children
+            </p>
+
+            <h1 class="couple-hero-names">
+              Devika <span>&amp;</span> Aarav
+            </h1>
+
+            <p class="couple-parents-sub">
+              Daughter of Smt. Sunita &amp; Shri Rajesh Sharma<br>
+              Son of Smt. Gayatri &amp; Shri Vikramaditya Rathore
+            </p>
+          </header>
+
+          <!-- Couple's Featured Portrait -->
+          <div class="couple-portrait-wrapper">
+            <div class="couple-portrait-inner">
+              <picture>
+                <source srcset="assets/images/hero/hero-royal-couple.webp" type="image/webp">
+                <img src="assets/images/hero/hero-royal-couple.jpg" alt="Devika and Aarav in traditional Indian wedding attire with floral garlands" width="520" height="624">
+              </picture>
+            </div>
+          </div>
+
+          <!-- Auspicious Countdown Bar -->
+          <div class="countdown-bar">
+            <div class="countdown-box">
+              <div class="countdown-val" id="countDays">28</div>
+              <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-val" id="countHours">14</div>
+              <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-val" id="countMins">32</div>
+              <div class="countdown-label">Mins</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-val" id="countSecs">45</div>
+              <div class="countdown-label">Secs</div>
+            </div>
+          </div>
+
+          <!-- Venue & Location Details -->
+          <section class="venue-showcase">
+            <h2 class="venue-title">The Oberoi Udaivilas</h2>
+            <p class="venue-address">
+              Lake Pichola, Haridas Ji Ki Magri, Udaipur, Rajasthan 313001, India
+            </p>
+            <div class="venue-actions">
+              <a href="https://maps.google.com/?q=The+Oberoi+Udaivilas+Udaipur" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size: 0.78rem; padding: 10px 22px;">
+                <span>📍 Open in Google Maps</span>
+              </a>
+              <a href="tel:+912942433300" class="btn btn-outline" style="font-size: 0.78rem; padding: 10px 22px;">
+                <span>🛎 Venue Concierge</span>
+              </a>
+            </div>
+          </section>
+
+          <!-- Wedding Schedule & Individual Function RSVP Controls -->
+          <form id="digitalRsvpForm">
+            <div class="schedule-rsvp-heading">
+              <h3>Wedding Itinerary &amp; RSVP Controls</h3>
+              <p>Please indicate your gracious presence for each individual ceremony below</p>
+            </div>
+
+            <div class="functions-rsvp-list">
+              <!-- 1. Mehendi Ceremony -->
+              <div class="function-card" data-rsvp-status="attending">
+                <div>
+                  <div class="fn-badge-date">Friday, December 18 • 11:00 AM</div>
+                  <h4 class="fn-title">🌿 Mehendi &amp; Festive Folk Brunch</h4>
+                  <div class="fn-meta">
+                    <span>📍 Promenade Lawns</span>
+                    <span>👗 Attire: Vibrant Traditional / Floral Green</span>
+                  </div>
+                </div>
+                <div class="fn-rsvp-controls">
+                  <div class="fn-status-options">
+                    <button type="button" class="fn-status-btn btn-attend selected-attending">✓ Attending</button>
+                    <button type="button" class="fn-status-btn btn-decline">✗ Unable</button>
+                  </div>
+                  <div class="fn-guest-count">
+                    <span>Guests:</span>
+                    <select class="fn-count-select" aria-label="Guests for Mehendi">
+                      <option value="1">1 Guest</option>
+                      <option value="2" selected>2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. Sangeet Gala -->
+              <div class="function-card" data-rsvp-status="attending">
+                <div>
+                  <div class="fn-badge-date">Friday, December 18 • 7:00 PM</div>
+                  <h4 class="fn-title">✨ Royal Sangeet &amp; Musical Night</h4>
+                  <div class="fn-meta">
+                    <span>📍 Chandra Mahal Courtyard</span>
+                    <span>👗 Attire: Indo-Western / Glamorous Lehengas &amp; Bandhgalas</span>
+                  </div>
+                </div>
+                <div class="fn-rsvp-controls">
+                  <div class="fn-status-options">
+                    <button type="button" class="fn-status-btn btn-attend selected-attending">✓ Attending</button>
+                    <button type="button" class="fn-status-btn btn-decline">✗ Unable</button>
+                  </div>
+                  <div class="fn-guest-count">
+                    <span>Guests:</span>
+                    <select class="fn-count-select" aria-label="Guests for Sangeet">
+                      <option value="1">1 Guest</option>
+                      <option value="2" selected>2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. Haldi & Phoolon Ki Holi -->
+              <div class="function-card" data-rsvp-status="attending">
+                <div>
+                  <div class="fn-badge-date">Saturday, December 19 • 10:00 AM</div>
+                  <h4 class="fn-title">🪷 Auspicious Haldi &amp; Phoolon Ki Holi</h4>
+                  <div class="fn-meta">
+                    <span>📍 Bageecha Courtyard</span>
+                    <span>👗 Attire: Festive Haldi Yellow &amp; Saffron</span>
+                  </div>
+                </div>
+                <div class="fn-rsvp-controls">
+                  <div class="fn-status-options">
+                    <button type="button" class="fn-status-btn btn-attend selected-attending">✓ Attending</button>
+                    <button type="button" class="fn-status-btn btn-decline">✗ Unable</button>
+                  </div>
+                  <div class="fn-guest-count">
+                    <span>Guests:</span>
+                    <select class="fn-count-select" aria-label="Guests for Haldi">
+                      <option value="1">1 Guest</option>
+                      <option value="2" selected>2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4. Shahi Baraat -->
+              <div class="function-card" data-rsvp-status="attending">
+                <div>
+                  <div class="fn-badge-date">Saturday, December 19 • 3:30 PM</div>
+                  <h4 class="fn-title">🎺 Shahi Baraat &amp; Milni Swagat</h4>
+                  <div class="fn-meta">
+                    <span>📍 Main Palace Gates to Waterfront</span>
+                    <span>👗 Safa Tying: Provided at Gates</span>
+                  </div>
+                </div>
+                <div class="fn-rsvp-controls">
+                  <div class="fn-status-options">
+                    <button type="button" class="fn-status-btn btn-attend selected-attending">✓ Attending</button>
+                    <button type="button" class="fn-status-btn btn-decline">✗ Unable</button>
+                  </div>
+                  <div class="fn-guest-count">
+                    <span>Guests:</span>
+                    <select class="fn-count-select" aria-label="Guests for Baraat">
+                      <option value="1">1 Guest</option>
+                      <option value="2" selected>2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5. Mandap & Saat Phere -->
+              <div class="function-card" data-rsvp-status="attending">
+                <div>
+                  <div class="fn-badge-date">Saturday, December 19 • 5:30 PM</div>
+                  <h4 class="fn-title">🔥 Sacred Mandap Pheras &amp; Varmala</h4>
+                  <div class="fn-meta">
+                    <span>📍 Lake Pichola Mandap Canopy</span>
+                    <span>👗 Attire: Royal Traditional Festive</span>
+                  </div>
+                </div>
+                <div class="fn-rsvp-controls">
+                  <div class="fn-status-options">
+                    <button type="button" class="fn-status-btn btn-attend selected-attending">✓ Attending</button>
+                    <button type="button" class="fn-status-btn btn-decline">✗ Unable</button>
+                  </div>
+                  <div class="fn-guest-count">
+                    <span>Guests:</span>
+                    <select class="fn-count-select" aria-label="Guests for Pheras">
+                      <option value="1">1 Guest</option>
+                      <option value="2" selected>2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6. Grand Reception Gala -->
+              <div class="function-card" data-rsvp-status="attending">
+                <div>
+                  <div class="fn-badge-date">Saturday, December 19 • 8:00 PM</div>
+                  <h4 class="fn-title">👑 Grand Reception Gala &amp; Royal Banquet</h4>
+                  <div class="fn-meta">
+                    <span>📍 Mewar Ballroom &amp; Lawns</span>
+                    <span>👗 Attire: Royal Formal Black-Tie / Formal Heritage</span>
+                  </div>
+                </div>
+                <div class="fn-rsvp-controls">
+                  <div class="fn-status-options">
+                    <button type="button" class="fn-status-btn btn-attend selected-attending">✓ Attending</button>
+                    <button type="button" class="fn-status-btn btn-decline">✗ Unable</button>
+                  </div>
+                  <div class="fn-guest-count">
+                    <span>Guests:</span>
+                    <select class="fn-count-select" aria-label="Guests for Reception">
+                      <option value="1">1 Guest</option>
+                      <option value="2" selected>2 Guests</option>
+                      <option value="3">3 Guests</option>
+                      <option value="4">4 Guests</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Guest Details & Logistics Assistance -->
+            <section class="guest-details-form">
+              <h3 style="font-family: var(--font-royal); font-size: 1.3rem; color: var(--card-primary); margin-bottom: 20px;">
+                Guest Information &amp; Hospitality Concierge
+              </h3>
+
+              <div class="details-grid">
+                <div>
+                  <label class="card-form-label" for="guestFullName">Full Name *</label>
+                  <input type="text" id="guestFullName" class="card-form-input" placeholder="e.g. Vikramaditya Kapoor" required>
+                </div>
+
+                <div>
+                  <label class="card-form-label" for="guestPhone">WhatsApp / Mobile *</label>
+                  <input type="tel" id="guestPhone" class="card-form-input" placeholder="+91 98200 12345" required>
+                </div>
+
+                <div>
+                  <label class="card-form-label" for="guestEmail">Email Address *</label>
+                  <input type="email" id="guestEmail" class="card-form-input" placeholder="vikram.kapoor@example.com" required>
+                </div>
+
+                <div>
+                  <label class="card-form-label" for="guestDietary">Dietary Preferences</label>
+                  <select id="guestDietary" class="card-form-select">
+                    <option value="Traditional Vegetarian (Rajasthani &amp; North Indian)">Traditional Vegetarian (Rajasthani &amp; Pan-Indian)</option>
+                    <option value="Jain Vegetarian (Strict No Onion / Garlic / Root)">Jain Vegetarian (Strict No Onion / Garlic / Root)</option>
+                    <option value="Non-Vegetarian (Royal Awadhi &amp; Mughlai)">Non-Vegetarian (Royal Awadhi &amp; Mughlai)</option>
+                    <option value="Vegan / Plant Based">Vegan / Plant Based</option>
+                    <option value="Gluten-Free Vegetarian">Gluten-Free Vegetarian</option>
+                  </select>
+                </div>
+
+                <div class="details-full">
+                  <label class="card-form-label">Stay &amp; Travel Logistics Concierge</label>
+                  <div class="logistics-checks">
+                    <label class="checkbox-label">
+                      <input type="checkbox" id="checkHotelStay" checked>
+                      <span>I require room allocation at The Oberoi Udaivilas / Partner Palace (Dec 18 - 20)</span>
+                    </label>
+
+                    <label class="checkbox-label">
+                      <input type="checkbox" id="checkAirportTransfer" checked>
+                      <span>I require airport chauffeur transfer from Maharana Pratap Airport (UDR)</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="details-full">
+                  <label class="card-form-label" for="guestFlight">Flight Arrival Details (Optional)</label>
+                  <input type="text" id="guestFlight" class="card-form-input" placeholder="e.g. IndiGo 6E-204 arriving Dec 18 at 09:30 AM">
+                </div>
+
+                <div class="details-full">
+                  <label class="card-form-label" for="guestBlessing">Auspicious Blessings &amp; Musical Song Requests for Couple</label>
+                  <textarea id="guestBlessing" class="card-form-textarea" rows="2" placeholder="Send your warm congratulations, blessings, or request a favorite song for the Sangeet dance floor!"></textarea>
+                </div>
+              </div>
+
+              <div class="rsvp-submit-wrapper">
+                <button type="submit" class="btn btn-rsvp-confirm">
+                  <span>Confirm Royal Attendance &amp; Generate Wedding Pass →</span>
+                </button>
+              </div>
+            </section>
+          </form>
+
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Confirmation Modal & Digital Royal Wedding Pass -->
+  <div class="modal-backdrop" id="rsvpConfirmModal" role="dialog" aria-modal="true" aria-labelledby="passGuestName">
+    <div class="pass-card">
+      <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close pass">✕</button>
+
+      <img src="assets/vectors/ganesh-mangalam.svg" alt="Royal Crest" class="pass-emblem" width="55" height="55">
+      <h3 class="pass-title">Official Royal Wedding Pass</h3>
+      <p class="pass-couple">Devika &amp; Aarav's Wedding</p>
+
+      <div class="pass-summary-list">
+        <div class="pass-summary-row">
+          <span class="pass-summary-label">Honored Guest:</span>
+          <span class="pass-summary-val" id="passGuestName">Vikramaditya Kapoor</span>
+        </div>
+        <div class="pass-summary-row">
+          <span class="pass-summary-label">Booking Reference:</span>
+          <span class="pass-summary-val" id="passBookingRef">MEHFIL-782194</span>
+        </div>
+        <div class="pass-summary-row">
+          <span class="pass-summary-label">Functions Confirmed:</span>
+          <span class="pass-summary-val" id="passFunctions">Mehendi, Sangeet, Haldi, Baraat, Pheras, Reception</span>
+        </div>
+        <div class="pass-summary-row">
+          <span class="pass-summary-label">Dietary Preference:</span>
+          <span class="pass-summary-val" id="passDietary">Traditional Vegetarian</span>
+        </div>
+        <div class="pass-summary-row">
+          <span class="pass-summary-label">Palace Stay:</span>
+          <span class="pass-summary-val" id="passStay">Yes (Requested)</span>
+        </div>
+        <div class="pass-summary-row">
+          <span class="pass-summary-label">Airport Transfer:</span>
+          <span class="pass-summary-val" id="passTransfer">Yes (Requested)</span>
+        </div>
+        <div class="pass-summary-row">
+          <span class="pass-summary-label">Venue:</span>
+          <span class="pass-summary-val">The Oberoi Udaivilas, Udaipur</span>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 12px; justify-content: center;">
+        <button type="button" class="btn btn-primary" id="printPassBtn" style="padding: 10px 22px; font-size: 0.8rem;">
+          <span>🖨 Print / Save Pass</span>
+        </button>
+        <a href="index.html" class="btn btn-outline" style="padding: 10px 22px; font-size: 0.8rem;">
+          <span>Return Home</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/rsvp.js"></script>
+</body>
+</html>
